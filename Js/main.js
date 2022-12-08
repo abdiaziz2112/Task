@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", () =>{
     document.querySelector("form").onsubmit = () =>{
         const task = document.querySelector("#task").value;
-        console.log(task)
+        const li = document.createElement('li');
+        li.innerHTML = task;
+        document.querySelector('#tasks').append(li);
+    
+        
 
 
         //stop form from submitting
@@ -9,3 +13,6 @@ document.addEventListener("DOMContentLoaded", () =>{
     }
  
 })
+
+
+
