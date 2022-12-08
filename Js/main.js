@@ -2,17 +2,26 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     // by default , submit button disabled
     document.querySelector("#submit").disabled = true;
+    document.querySelector("#submit").style.backgroundColor = "#A3EBB1";
+        document.querySelector("#submit").style.color = "#fff";
 
     document.querySelector("#task").onkeyup = () => {
         // If value of input charecter  greaterthan zero make btn disabled
         if (document.querySelector("#task").value.length > 0) {
 
+
+
             document.querySelector("#submit").disabled = false;
+            document.querySelector("#submit").style.backgroundColor = "#18A558";
+            document.querySelector("#submit").style.color = "#fff";
             
         }
         // If value of input charecter  greaterthan zero make btn enabled or active
         else{
             document.querySelector("#submit").disabled = true;
+            document.querySelector("#submit").style.backgroundColor = "#A3EBB1";
+            document.querySelector("#submit").style.color = "#fff";
+
         }
         
     }
@@ -32,6 +41,8 @@ document.addEventListener("DOMContentLoaded", () =>{
         document.querySelector("#task").value = "";
         // make diabled btn when submiting form
         document.querySelector("#submit").disabled = true;
+        document.querySelector("#submit").style.backgroundColor = "#A3EBB1";
+        document.querySelector("#submit").style.color = "#fff";
     
         
 

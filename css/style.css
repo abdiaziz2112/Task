@@ -14,5 +14,34 @@
 .container > div{
     display: block;
     flex-wrap: wrap;
-    background-color: ;
+    
+}
+
+
+div input{
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 2rem;
+    border-radius: 7px;
+    border: 1px solid #000;
+    outline: none;
+    
+
+}
+ul li{
+    font-size: 1.5rem;
+    font-family:sans-serif;
+}
+
+#submit{
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width:720px) {
+    body{
+        width: 100%;
+        background-color: whitesmoke;
+    }
+    
 }
